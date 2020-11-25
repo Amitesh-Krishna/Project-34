@@ -9,19 +9,17 @@ function setup(){
 	engine = Engine.create();
 	world = engine.world;
 	//the pendulums
-	//the leftmost
-	pendulum1 = new pendulum(401,height-100);
-	pendulum2 = new pendulum(428.5,height-100);
-	pendulum3 = new pendulum(456,height-100);
-	pendulum4 = new pendulum(483.5,height-100);
-	//the rightmost
-	pendulum5 = new pendulum(511,height-100);
+	pendulum1 = new pendulum(136,height-100);
+	pendulum2 = new pendulum(246,height-100);
+	pendulum3 = new pendulum(356,height-100);
+	pendulum4 = new pendulum(466,height-100);
+	pendulum5 = new pendulum(576,height-100);
 	// the slings
-	sling1 = new sling(pendulum1.body,{x:401, y:100});
-	sling2 = new sling(pendulum2.body,{x:428.5, y:100});
+	sling1 = new sling(pendulum1.body,{x:236, y:100});
+	sling2 = new sling(pendulum2.body,{x:346, y:100});
 	sling3 = new sling(pendulum3.body,{x:456, y:100});
-	sling4 = new sling(pendulum4.body,{x:483.5, y:100});
-	sling5 = new sling(pendulum5.body,{x:511, y:100});
+	sling4 = new sling(pendulum4.body,{x:566, y:100});
+	sling5 = new sling(pendulum5.body,{x:676, y:100});
 	Engine.run(engine);
 }
 
